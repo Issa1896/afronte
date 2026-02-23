@@ -6,251 +6,249 @@
     <title>Horizonte Afro — Institucional</title>
     <meta
       name="description"
-      content="Horizonte Afro: microformações, kit pedagógico e evidências para implementação contínua da Lei 10.639/03."
+      content="Horizonte Afro: formação prática, kit pedagógico e evidências para implementação contínua da Lei 10.639/03."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <a class="skip-link" href="#main">Pular para conteúdo</a>
+    <a class="skip-link" href="#main" data-i18n="skip">Pular para conteúdo</a>
 
-    <!-- HEADER / NAVBAR -->
+    <!-- HEADER -->
     <header class="site-header" id="top">
       <div class="container nav">
         <a class="brand" href="#top" aria-label="Página inicial">
-          <img
-            src="logo-horizonte-afro.png"
-            alt="Horizonte Afro"
-            class="brand__img"
-          />
+          <img src="logo-horizonte-afro.png" alt="Horizonte Afro" class="brand__img" />
           <span class="brand__title">HORIZONTE AFRO</span>
         </a>
 
-        <!-- MENU DESKTOP -->
         <nav class="nav__menu" aria-label="Menu principal">
-          <a href="#sobre" data-i18n="menuAbout">Sobre</a>
-          <a href="#solucao" data-i18n="menuSolution">Solução</a>
-          <a href="#como-funciona" data-i18n="menuHow">Como funciona</a>
-          <a href="#kit1" data-i18n="menuKit">Kit 01</a>
           <a href="#beneficios" data-i18n="menuBenefits">Benefícios</a>
-          <a href="#faq" data-i18n="menuFaq">FAQ</a>
-          <a href="#contato" data-i18n="menuContact">Contato</a>
+          <a href="#como-funciona" data-i18n="menuHow">Como funciona</a>
+          <a href="#feedback" data-i18n="menuFeedback">Feedback</a>
+          <a href="#kit1" data-i18n="menuKit">Kit 01</a>
         </nav>
 
-        <!-- AÇÕES -->
-        <div class="nav__actions">
-          <label class="sr-only" for="langSelect">Idioma</label>
-          <select id="langSelect" class="select" aria-label="Selecionar idioma">
-            <option value="pt">PT</option>
-            <option value="en">EN</option>
-            <option value="fr">FR</option>
-            <option value="es">ES</option>
-          </select>
+        <!-- CTA destacado no canto (igual vibe do modelo) -->
+        <div class="nav__right">
+          <div class="nav__actions">
+            <label class="sr-only" for="langSelect">Idioma</label>
+            <select id="langSelect" class="select" aria-label="Selecionar idioma">
+              <option value="pt">PT</option>
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+              <option value="es">ES</option>
+            </select>
 
-          <button id="themeToggle" class="btn btn--ghost" type="button">
-            <span aria-hidden="true">🌓</span>
-            <span data-i18n="themeToggle">Tema</span>
-          </button>
+            <button id="themeToggle" class="btn btn--ghost" type="button" aria-label="Alternar tema">
+              <span aria-hidden="true">🌓</span>
+              <span data-i18n="theme">Tema</span>
+            </button>
 
-          <!-- HAMBURGER -->
-          <button
-            class="hamburger"
-            id="hamburger"
-            type="button"
-            aria-label="Abrir menu"
-            aria-controls="mobileMenu"
-            aria-expanded="false"
-          >
-            <span class="hamburger__bar"></span>
-            <span class="hamburger__bar"></span>
-            <span class="hamburger__bar"></span>
-          </button>
+            <a
+              class="btn btn--primary btn--nav"
+              href="Horizonte_Afro_Kit_01_Versao_Institucional_Final.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="navCta"
+            >
+              Abrir Kit (PDF)
+            </a>
+
+            <button
+              class="hamburger"
+              id="hamburger"
+              type="button"
+              aria-label="Abrir menu"
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+            >
+              <span class="hamburger__bar"></span>
+              <span class="hamburger__bar"></span>
+              <span class="hamburger__bar"></span>
+            </button>
+          </div>
         </div>
       </div>
 
       <!-- MENU MOBILE -->
       <div class="mobile-menu" id="mobileMenu" hidden>
         <div class="container mobile-menu__inner">
-          <a href="#sobre" data-i18n="menuAbout">Sobre</a>
-          <a href="#solucao" data-i18n="menuSolution">Solução</a>
-          <a href="#como-funciona" data-i18n="menuHow">Como funciona</a>
-          <a href="#kit1" data-i18n="menuKit">Kit 01</a>
           <a href="#beneficios" data-i18n="menuBenefits">Benefícios</a>
-          <a href="#faq" data-i18n="menuFaq">FAQ</a>
-          <a href="#contato" data-i18n="menuContact">Contato</a>
+          <a href="#como-funciona" data-i18n="menuHow">Como funciona</a>
+          <a href="#feedback" data-i18n="menuFeedback">Feedback</a>
+          <a href="#kit1" data-i18n="menuKit">Kit 01</a>
+          <a
+            class="mobile-cta"
+            href="Horizonte_Afro_Kit_01_Versao_Institucional_Final.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="navCta"
+          >
+            Abrir Kit (PDF)
+          </a>
         </div>
       </div>
     </header>
 
     <main id="main">
-      <!-- HERO (CTA principal = PDF) -->
-      <section class="hero">
+      <!-- HERO (mais próximo do modelo) -->
+      <section class="hero hero--tight">
         <div class="container hero__grid">
           <div class="hero__copy">
             <p class="badge" data-i18n="badge">
               Educação Étnico-Racial o ano todo • Lei 10.639/03
             </p>
 
-            <h1 class="hero__title" data-i18n="heroTitle2">
-              Implementação contínua da Lei 10.639/03 com formação prática e evidências reais.
+            <h1 class="hero__title hero__title--model">
+              <span data-i18n="heroLine1">Centralize a prática.</span>
+              <span class="hero__titleAccent" data-i18n="heroLine2">Elimine o improviso.</span>
             </h1>
 
-            <p class="hero__subtitle" data-i18n="heroSubtitle2">
-              Microformações aplicáveis, kit pedagógico estruturado e painel de acompanhamento para escolas e redes.
+            <p class="hero__subtitle hero__subtitle--model" data-i18n="heroSub">
+              O Horizonte Afro oferece formação prática + kit pedagógico + evidências para implementação contínua da Lei 10.639/03.
+              Menos “evento” e mais rotina pedagógica.
             </p>
 
-            <div class="hero__cta">
+            <div class="hero__cta hero__cta--model">
               <a
-                class="btn btn--primary"
+                class="btn btn--primary btn--xl"
                 href="Horizonte_Afro_Kit_01_Versao_Institucional_Final.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-i18n="kitCtaTop"
+                data-i18n="ctaPrimary"
               >
                 Abrir Kit 01 (PDF)
               </a>
 
-              <a class="btn btn--ghost" href="#solucao" data-i18n="primaryCta2">
-                Conhecer a solução
+              <a class="btn btn--ghost btn--xl" href="#kit1" data-i18n="ctaSecondary">
+                Ver prévia do kit
               </a>
             </div>
 
-            <div class="trust" aria-label="Destaques">
-              <div class="trust__item">
-                <strong data-i18n="trust1Title">Foco em prática</strong>
-                <span data-i18n="trust1Desc">menos teoria solta</span>
+            <!-- KPIs em bloco alinhado (vibe do modelo) -->
+            <div class="kpi-row" aria-label="Indicadores">
+              <div class="kpi-pill">
+                <span class="kpi-pill__n">+80%</span>
+                <span class="kpi-pill__t" data-i18n="kpi1">clareza didática</span>
               </div>
-              <div class="trust__item">
-                <strong data-i18n="trust2Title">Acompanhamento</strong>
-                <span data-i18n="trust2Desc">evidências mensais</span>
+              <div class="kpi-pill">
+                <span class="kpi-pill__n">1</span>
+                <span class="kpi-pill__t" data-i18n="kpi2">kit aplicável</span>
               </div>
-              <div class="trust__item">
-                <strong data-i18n="trust3Title">Território</strong>
-                <span data-i18n="trust3Desc">conexão com comunidades</span>
+              <div class="kpi-pill">
+                <span class="kpi-pill__n">0</span>
+                <span class="kpi-pill__t" data-i18n="kpi3">retrabalho sem evidência</span>
               </div>
             </div>
           </div>
+
+          <!-- Card à direita (mais “produto”) -->
+          <aside class="hero__card hero__card--model" aria-label="Resumo do kit">
+            <div class="hero__cardTop">
+              <span class="chip" data-i18n="chipOfficial">Documento institucional</span>
+              <span class="chip chip--soft" data-i18n="chipKit">Kit 01</span>
+            </div>
+
+            <h3 data-i18n="cardTitle">O que você leva</h3>
+            <ul class="checklist">
+              <li data-i18n="card1">Roteiros prontos para aplicar</li>
+              <li data-i18n="card2">Checklist + sequência didática</li>
+              <li data-i18n="card3">Modelo de evidências por turma</li>
+              <li data-i18n="card4">Versão institucional do Kit 01</li>
+            </ul>
+
+            <a
+              class="btn btn--primary btn--full"
+              href="Horizonte_Afro_Kit_01_Versao_Institucional_Final.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="cardCta"
+            >
+              Abrir documento oficial
+            </a>
+
+            <p class="muted tiny hero__cardNote" data-i18n="cardNote">
+              Ideal para apresentação em coordenação, direção e secretaria.
+            </p>
+          </aside>
         </div>
 
-        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__bg hero__bg--model" aria-hidden="true"></div>
       </section>
 
-      <!-- SOBRE -->
-      <section class="section" id="sobre">
+      <!-- BENEFÍCIOS -->
+      <section class="section" id="beneficios">
         <div class="container">
-          <h2 data-i18n="aboutTitle">Sobre o Horizonte Afro</h2>
-          <p class="lead" data-i18n="aboutLead">
-            A educação étnico-racial não pode ser evento: precisa virar rotina. O Horizonte Afro apoia docentes e gestores
-            com formação prática, materiais aplicáveis e acompanhamento.
+          <h2 data-i18n="benefTitle">Por que o Horizonte Afro?</h2>
+          <p class="lead" data-i18n="benefLead">
+            Chega de fazer “uma aula no novembro” e chamar isso de implementação. Aqui é estrutura: prática + material + evidência.
           </p>
 
-          <div class="grid2">
-            <article class="panel panel--big">
-              <h3 data-i18n="missionTitle">Missão</h3>
-              <p data-i18n="missionDesc">
-                Ajudar escolas e redes a implementarem a Lei 10.639/03 de forma contínua, segura e mensurável.
-              </p>
+          <div class="cards cards--model">
+            <article class="card">
+              <h3 data-i18n="b1t">Aplicação real</h3>
+              <p data-i18n="b1d">Atividades e sequências didáticas prontas para adaptar ao território e ao ano/série.</p>
             </article>
-
-            <article class="panel panel--big">
-              <h3 data-i18n="visionTitle">Visão</h3>
-              <p data-i18n="visionDesc">
-                Currículos vivos, conectados ao território e sustentados por práticas pedagógicas consistentes.
-              </p>
+            <article class="card">
+              <h3 data-i18n="b2t">Fonte única</h3>
+              <p data-i18n="b2d">Kit + organização pedagógica: menos dispersão, mais consistência e continuidade.</p>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- SOLUÇÃO -->
-      <section class="section section--alt" id="solucao">
-        <div class="container">
-          <h2 data-i18n="solutionTitle">O que oferecemos</h2>
-          <p class="lead" data-i18n="solutionLead2">
-            Um conjunto de módulos pensados para o cotidiano escolar — do professor à gestão.
-          </p>
-
-          <div class="grid2">
-            <article class="panel panel--big">
-              <h3 data-i18n="offer1Title">Microformações</h3>
-              <p data-i18n="offer1Desc">
-                Aulas curtas, objetivas e diretamente aplicáveis em sala.
-              </p>
+            <article class="card">
+              <h3 data-i18n="b3t">Evidências</h3>
+              <p data-i18n="b3d">Modelo simples de evidências para acompanhamento por escola e rede (sem virar burocracia).</p>
             </article>
-
-            <article class="panel panel--big">
-              <h3 data-i18n="offer2Title">Kit pedagógico</h3>
-              <p data-i18n="offer2Desc">
-                Sequências didáticas, atividades e checklists para adaptar.
-              </p>
-            </article>
-
-            <article class="panel panel--big">
-              <h3 data-i18n="offer3Title">Curadoria do território</h3>
-              <p data-i18n="offer3Desc">
-                Conteúdos conectados às comunidades e à realidade local.
-              </p>
-            </article>
-
-            <article class="panel panel--big">
-              <h3 data-i18n="offer4Title">Painel de evidências</h3>
-              <p data-i18n="offer4Desc">
-                Acompanhamento mensal: trilhas, certificados, portfólios e relatórios por escola/rede.
-              </p>
+            <article class="card">
+              <h3 data-i18n="b4t">Institucional</h3>
+              <p data-i18n="b4d">Formato e linguagem prontos para apresentar em secretaria, direção e coordenação pedagógica.</p>
             </article>
           </div>
         </div>
       </section>
 
       <!-- COMO FUNCIONA -->
-      <section class="section" id="como-funciona">
+      <section class="section section--alt" id="como-funciona">
         <div class="container">
-          <h2 data-i18n="howTitle">Como funciona</h2>
+          <h2 data-i18n="howTitle">Itinerário de valor</h2>
+          <p class="lead" data-i18n="howLead">
+            Um fluxo simples para sair do “evento” e entrar no “processo contínuo”.
+          </p>
 
-          <ol class="steps">
+          <ol class="steps steps--model">
             <li class="step">
               <div class="step__n">1</div>
               <div class="step__body">
-                <h3 data-i18n="how1Title">Diagnóstico</h3>
-                <p data-i18n="how1Desc">
-                  Entendemos o contexto e os objetivos da escola/rede.
-                </p>
+                <h3 data-i18n="h1t">Diagnóstico rápido</h3>
+                <p data-i18n="h1d">Mapeie turma, contexto e pontos de partida (sem travar em burocracia).</p>
               </div>
             </li>
-
             <li class="step">
               <div class="step__n">2</div>
               <div class="step__body">
-                <h3 data-i18n="how2Title">Trilhas e aplicação</h3>
-                <p data-i18n="how2Desc">
-                  Microformações + kit para aplicar e adaptar com segurança.
-                </p>
+                <h3 data-i18n="h2t">Aplicação com kit</h3>
+                <p data-i18n="h2d">Use as sequências e adaptações por território, com roteiro e checklist.</p>
               </div>
             </li>
-
             <li class="step">
               <div class="step__n">3</div>
               <div class="step__body">
-                <h3 data-i18n="how3Title">Evidências e evolução</h3>
-                <p data-i18n="how3Desc">
-                  Relatórios mensais para acompanhar avanços e lacunas.
-                </p>
+                <h3 data-i18n="h3t">Evidências & melhoria</h3>
+                <p data-i18n="h3d">Registre evidências essenciais e ajuste o percurso. Evolução mensal, sem sofrimento.</p>
               </div>
             </li>
           </ol>
 
-          <div class="callout">
+          <div class="callout callout--model">
             <div>
-              <h3>Kit 01 disponível</h3>
-              <p class="muted">
-                Acesse o documento institucional completo e veja a proposta estruturada.
-              </p>
+              <h3 data-i18n="callTitle">Pronto pra ver o Kit 01?</h3>
+              <p class="muted" data-i18n="callDesc">Abra o documento institucional completo em uma nova aba.</p>
             </div>
             <a
               class="btn btn--primary"
               href="Horizonte_Afro_Kit_01_Versao_Institucional_Final.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              data-i18n="callBtn"
             >
               Abrir PDF
             </a>
@@ -258,19 +256,85 @@
         </div>
       </section>
 
-      <!-- KIT 01 (selo + mockup 3D + alinhado ao lado do botão) -->
+      <!-- FEEDBACK DOS USUÁRIOS -->
+      <section class="section" id="feedback">
+        <div class="container">
+          <h2 data-i18n="fbTitle">Feedback dos usuários</h2>
+          <p class="lead" data-i18n="fbLead">
+            Validação do problema e da proposta: implementação contínua, aplicabilidade, território e evidências.
+          </p>
+
+          <div class="testimonials">
+            <figure class="tcard">
+              <blockquote>
+                “A proposta é extremamente importante e necessária, especialmente por fortalecer a educação étnico-racial como prática contínua e não apenas pontual. As questões Étnicos Raciais, na maioria das vezes são abordadas de forma muito superficial, principalmente na Educação Infantil e no Ensino fundamental”.
+              </blockquote>
+              <!--<figcaption>
+                <span class="tbadge">Santander Xplorer</span>
+                <span class="muted">• colega do programa</span>
+              </figcaption>-->
+            </figure>
+
+            <figure class="tcard">
+              <blockquote>
+                “Excelente iniciativa que, certamente, ajudará muitos professores e contribuirá com o aprendizado dos alunos”.
+              </blockquote>
+              <!--<figcaption>
+                <span class="tbadge">Santander Xplorer</span>
+                <span class="muted">• colega do programa</span>
+              </figcaption>-->
+            </figure>
+
+            <figure class="tcard">
+              <blockquote>
+                “O problema é claro e real: a Lei 10.639/03 ainda aparece como evento, não como prática contínua. A proposta responde a uma demanda concreta da escola”.
+              </blockquote>
+              <!--<figcaption>
+                <span class="tbadge">Santander Xplorer</span>
+                <span class="muted">• colega do programa</span>
+              </figcaption>-->
+            </figure>
+
+            <figure class="tcard">
+              <blockquote>
+                “Minha impressão geral sobre o Horizonte Afro é extremamente positiva. A proposta é relevante, necessária e muito bem alinhada às demandas atuais de implementação prática da Lei 10.639/03. O foco em aplicabilidade, conexão com território e evidências pedagógicas fortalece a experiência e gera segurança para docentes e gestores”.
+              </blockquote>
+              <!--<figcaption>
+                <span class="tbadge">Santander Xplorer</span>
+                <span class="muted">• colega do programa</span>
+              </figcaption>-->
+            </figure>
+          </div>
+
+          <div class="micro-metrics" aria-label="Resumo do feedback">
+            <div class="mm">
+              <strong>4/4</strong>
+              <span class="muted">validação da relevância</span>
+            </div>
+            <div class="mm">
+              <strong>4/4</strong>
+              <span class="muted">ênfase em continuidade</span>
+            </div>
+            <div class="mm">
+              <strong>3/4</strong>
+              <span class="muted">pedem aplicabilidade</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KIT 01 -->
       <section class="section section--alt" id="kit1">
         <div class="container">
           <h2 data-i18n="kitTitle">Kit Pedagógico 01</h2>
           <p class="lead" data-i18n="kitLead">
-            Material estruturado para aplicação prática da Lei 10.639/03 em sala de aula.
+            Documento institucional com proposta pedagógica, estrutura metodológica e modelo de aplicação.
           </p>
 
           <div class="kit-layout">
-            <!-- Preview com mockup 3D -->
             <div class="kit-preview">
               <div class="pdf-mockup" aria-label="Documento oficial: Kit Pedagógico 01">
-                <span class="seal">DOCUMENTO OFICIAL</span>
+                <span class="seal" data-i18n="seal">DOCUMENTO OFICIAL</span>
 
                 <div class="pdf-frame pdf-frame--mock">
                   <iframe
@@ -285,141 +349,80 @@
               </div>
             </div>
 
-            <!-- Conteúdo + botões -->
             <div class="kit-content">
-              <h3 data-i18n="kitCardTitle">Horizonte Afro – Kit 01 (PDF)</h3>
+              <h3 data-i18n="kitCardTitle">Abrir o Kit Pedagógico</h3>
               <p class="muted" data-i18n="kitCardDesc">
-                Documento institucional com proposta pedagógica, estrutura metodológica e modelo de aplicação.
+                Use o PDF como referência institucional e base de implementação. O preview pode variar por navegador.
               </p>
 
               <div class="kit-actions">
                 <a
-                  class="btn btn--primary"
+                  class="btn btn--primary btn--xl"
                   href="Horizonte_Afro_Kit_01_Versao_Institucional_Final.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-i18n="kitOpen"
                 >
-                  Abrir Kit Pedagógico
+                  Abrir Kit 01 (PDF)
                 </a>
 
                 <a
-                  class="btn btn--ghost"
+                  class="btn btn--ghost btn--xl"
                   href="Horizonte_Afro_Kit_01_Versao_Institucional_Final.pdf"
                   download
+                  data-i18n="kitDownload"
                 >
                   Baixar PDF
                 </a>
               </div>
 
-              <p class="muted tiny kit-note">
-                Dica: se o preview não carregar no navegador, use “Abrir Kit Pedagógico”.
+              <p class="muted tiny kit-note" data-i18n="kitNote">
+                Se o preview não carregar, use “Abrir Kit 01 (PDF)”.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- BENEFÍCIOS -->
-      <section class="section" id="beneficios">
-        <div class="container">
-          <h2 data-i18n="benefitsTitle">Benefícios</h2>
-          <p class="lead" data-i18n="benefitsLead">
-            Resultado esperado: prática contínua, menor retrabalho e maior segurança pedagógica.
-          </p>
-
-          <div class="grid3">
-            <article class="panel">
-              <h3 data-i18n="ben1Title">Para docentes</h3>
-              <p data-i18n="ben1Desc">
-                Roteiros aplicáveis, menos improviso, mais confiança.
-              </p>
-            </article>
-            <article class="panel">
-              <h3 data-i18n="ben2Title">Para gestão</h3>
-              <p data-i18n="ben2Desc">
-                Evidências e indicadores para acompanhar implementação real.
-              </p>
-            </article>
-            <article class="panel">
-              <h3 data-i18n="ben3Title">Para estudantes</h3>
-              <p data-i18n="ben3Desc">
-                Currículo mais representativo e conectado ao território.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section class="section section--alt" id="faq">
-        <div class="container">
-          <h2 data-i18n="faqTitle">Perguntas frequentes</h2>
-
-          <div class="faq">
-            <details class="faq__item">
-              <summary data-i18n="faq1Q">Isso substitui formação da rede?</summary>
-              <p data-i18n="faq1A">
-                Não. Complementa com prática aplicável e acompanhamento contínuo, com foco em sala de aula e evidências.
-              </p>
-            </details>
-
-            <details class="faq__item">
-              <summary data-i18n="faq2Q">Funciona para escolas pequenas?</summary>
-              <p data-i18n="faq2A">
-                Sim. O produto é modular: dá pra começar pequeno e expandir conforme adesão.
-              </p>
-            </details>
-
-            <details class="faq__item">
-              <summary data-i18n="faq3Q">O kit é só para um nível de ensino?</summary>
-              <p data-i18n="faq3A">
-                Não. A ideia é adaptar por etapa/ano e contexto territorial, com apoio de roteiros e checklists.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTATO -->
+      <!-- CONTATO / CTA FINAL -->
       <section class="section" id="contato">
         <div class="container">
           <h2 data-i18n="contactTitle">Contato</h2>
           <p class="lead" data-i18n="contactLead">
-            Quer conversar, pilotar ou apoiar?
+            Quer parceria, piloto ou apresentação? Fale direto.
           </p>
 
-          <div class="contact-grid">
-            <div class="panel panel--big">
-              <h3 data-i18n="contactCardTitle">Fale com a equipe</h3>
-              <p class="muted" data-i18n="contactCardDesc">
-                Envie uma mensagem e retornaremos o quanto antes.
-              </p>
-              <ul class="contact-list">
-                <li><strong>Email:</strong> marcelinoissacunha@gmail.com</li>
-                <li><strong>WhatsApp:</strong> +55 (85) 98944-7557</li>
-              </ul>
-              <p class="muted tiny" data-i18n="contactNote">
-                Troca esses contatos pelos teus reais quando for publicar.
-              </p>
-            </div>
+        <div class="contact-grid">
+          <div class="panel panel--big">
+            <h3 data-i18n="contactCardTitle">Fale com a equipe</h3>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> marcelinoissacunha@gmail.com</li>
+              <li><strong>WhatsApp:</strong> +55 (85) 98944-7557</li>
+            </ul>
 
-            <div class="panel panel--big">
-              <h3 data-i18n="contactCtaTitle">Baixe o Kit 01</h3>
-              <p class="muted" data-i18n="contactCtaDesc">
-                Quer ver a proposta completa? Abra o PDF do Kit 01 em uma nova aba.
-              </p>
-              <a
-                class="btn btn--primary"
-                href="Horizonte_Afro_Kit_01_Versao_Institucional_Final.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Abrir PDF
-              </a>
+            <div class="kit-actions">
+              <a class="btn btn--primary" href="mailto:marcelinoissacunha@gmail.com" data-i18n="emailBtn">Enviar e-mail</a>
+              <a class="btn btn--ghost" href="https://wa.me/5585989447557" target="_blank" rel="noopener noreferrer" data-i18n="waBtn">Abrir WhatsApp</a>
             </div>
           </div>
+
+          <div class="panel panel--big">
+            <h3 data-i18n="contactCtaTitle">Baixe o Kit 01</h3>
+            <p class="muted" data-i18n="contactCtaDesc">
+              Documento institucional para apresentar na escola/rede.
+            </p>
+            <a
+              class="btn btn--primary btn--full btn--xl"
+              href="Horizonte_Afro_Kit_01_Versao_Institucional_Final.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="contactCtaBtn"
+            >
+              Abrir PDF
+            </a>
+          </div>
         </div>
+      </div>
       </section>
 
       <!-- FOOTER -->
@@ -431,10 +434,10 @@
           </div>
 
           <div class="footer__links" aria-label="Links do rodapé">
-            <a href="#sobre" data-i18n="menuAbout">Sobre</a>
-            <a href="#solucao" data-i18n="menuSolution">Solução</a>
+            <a href="#beneficios" data-i18n="menuBenefits">Benefícios</a>
+            <a href="#como-funciona" data-i18n="menuHow">Como funciona</a>
+            <a href="#feedback" data-i18n="menuFeedback">Feedback</a>
             <a href="#kit1" data-i18n="menuKit">Kit 01</a>
-            <a href="#contato" data-i18n="menuContact">Contato</a>
           </div>
         </div>
       </footer>
